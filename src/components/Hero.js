@@ -13,7 +13,7 @@ export const Hero = () => {
     <>
       <div className="px-2 md:px-4 flex">
         <div className="lg:flex-[.2]"></div>
-        <div className="lg:flex-[.6] flex-[1] py-10 md:py-12 relative">
+        <div className="lg:flex-[.6] flex-[1] py-10 md:py-10 relative">
           {/* headings */}
           <div
             data-aos="fade-down"
@@ -53,7 +53,7 @@ export const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="1000"
-            className="flex flex-wrap mb-10 md:justify-start justify-evenly max-w-[400px] mx-auto md:mx-0"
+            className="flex flex-wrap mb-10 lg:mb-5 md:justify-start justify-evenly max-w-[400px] mx-auto md:mx-0"
           >
             <button className="bg-black mr-3 py-[10px] px-[18px] outline-none border-none text-sm font-semibold text-white rounded-md">
               Buy on Uniswap
@@ -70,7 +70,7 @@ export const Hero = () => {
             data-aos-duration="1000"
             className="card_container flex justify-center overflow-hidden"
           >
-            <div className="bg-black text-white p-5 max-w-[310px] bg-opacity-95 rounded-md">
+            <div className="bg-slate-900 text-white p-5 max-w-[301px] rounded-md">
               <h1 className="text-[28px] font-semibold opacity-95">Stake</h1>
               <p className="text-gray-300 opacity-90 text-[15px] mt-3">
                 Stake POOLZ to participate in whitelists for upcoming IDOs.
@@ -110,7 +110,7 @@ export const Hero = () => {
                   60 Days
                 </button>
               </div>
-              <button className="p-2 px-4 font-semibold rounded-md border border-slate-800 w-full mt-4 bg-pink-400">
+              <button className="p-2 px-4 font-semibold rounded-md border border-slate-800 w-full mt-1 bg-pink-400">
                 Stake & Lock
               </button>
             </div>

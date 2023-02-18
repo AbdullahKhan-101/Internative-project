@@ -50,7 +50,7 @@ export const Header = () => {
         </div>
         <div className="bg-black cursor-pointer text-white rounded-md flex items-center px-3 py-[9px]">
           <CodeBracketIcon className="w-6 p-[6px] text-white rounded-full bg-yellow-400 h-6 mr-4 rotate-90" />
-          <span className="mr-4 font-semibold">Binance</span>
+          <span className="mr-4 text-[15px] font-semibold">Binance</span>
           <ChevronDownIcon className="w-3 h-3 text-white" />
         </div>
       </div>

@@ -12,7 +12,7 @@ export const BonusCards = () => {
     <div className="bg-gray-50 bg-opacity-80 overflow-x-hidden">
       <div className="px-2 md:px-4 flex">
         <div className="lg:flex-[.2]"></div>
-        <div className="lg:flex-[.6] overflow-hidden flex-[1] py-14 flex flex-wrap md:flex-nowrap justify-center md:justify-start">
+        <div className="lg:flex-[.6] overflow-hidden flex-[1] pt-12 pb-8 flex flex-wrap md:flex-nowrap justify-center md:justify-start">
           <div
             data-aos="fade-up"
             data-aos-delay="500"
