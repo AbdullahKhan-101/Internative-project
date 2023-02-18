@@ -9,10 +9,10 @@ export const BonusCards = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50 bg-opacity-80 overflow-x-hidden">
-      <div className="px-2 md:px-4 flex">
+    <div className="overflow-x-hidden bg-gray-50 bg-opacity-80">
+      <div className="flex px-2 md:px-4">
         <div className="lg:flex-[.2]"></div>
-        <div className="lg:flex-[.6] overflow-hidden flex-[1] pt-12 pb-8 flex flex-wrap md:flex-nowrap justify-center md:justify-start">
+        <div className="lg:flex-[.6] overflow-hidden flex-[1] pt-12 pb-2 flex flex-wrap md:flex-nowrap justify-center md:justify-start">
           <div
             data-aos="fade-up"
             data-aos-delay="500"
@@ -23,22 +23,22 @@ export const BonusCards = () => {
               Tiers
             </p>
             <div className="flex justify-between items-center py-[15px] border-b-gray-200 border-b border-opacity-80">
-              <p className="font-semibold text-[14px] tracking-tight">
+              <p className="font-semibold text-[13px] tracking-tight">
                 Pools Governance
               </p>
-              <CheckIcon className="w-5 h-5 rounded-full text-white p-[2px] bg-green-600" />
+              <CheckIcon className="w-[18px] h-[18px] rounded-full text-white p-[2px] bg-green-600" />
             </div>
             <div className="flex justify-between items-center py-[15px] border-b-gray-200 border-b border-opacity-80">
-              <p className="font-semibold text-[14px] tracking-tight">
+              <p className="font-semibold text-[13px] tracking-tight">
                 Guaranted Allocation
               </p>
-              <CheckIcon className="w-5 h-5 rounded-full text-white p-[2px] bg-green-600" />
+              <CheckIcon className="w-[18px] h-[18px] rounded-full text-white p-[2px] bg-green-600" />
             </div>
             <div className="flex justify-between items-center py-[15px] border-b-gray-200 border-b border-opacity-80">
-              <p className="font-semibold text-[14px] tracking-tight">
+              <p className="font-semibold text-[13px] tracking-tight">
                 250 POOLZ Equal One Ticket
               </p>
-              <CheckIcon className="w-5 h-5 rounded-full text-white p-[2px] bg-green-600" />
+              <CheckIcon className="w-[18px] h-[18px] rounded-full text-white p-[2px] bg-green-600" />
             </div>
           </div>
           <div
@@ -51,22 +51,22 @@ export const BonusCards = () => {
               Stake Bonus
             </p>
             <div className="flex justify-between items-center py-[15px] border-b-gray-200 border-b border-opacity-80">
-              <p className="font-semibold text-[14px] tracking-tight">
+              <p className="font-semibold text-[13px] tracking-tight">
                 250+ POOLZ
               </p>
-              <p className="font-semibold text-[14px] tracking-tight">4.56%</p>
+              <p className="font-semibold text-[13px] tracking-tight">4.56%</p>
             </div>
             <div className="flex justify-between items-center py-[15px] border-b-gray-200 border-b border-opacity-80">
-              <p className="font-semibold text-[14px] tracking-tight">
+              <p className="font-semibold text-[13px] tracking-tight">
                 1,000+ POOLZ
               </p>
-              <p className="font-semibold text-[14px] tracking-tight">12.27%</p>
+              <p className="font-semibold text-[13px] tracking-tight">12.27%</p>
             </div>
             <div className="flex justify-between items-center py-[15px] border-b-gray-200 border-b border-opacity-80">
-              <p className="font-semibold text-[14px] tracking-tight">
+              <p className="font-semibold text-[13px] tracking-tight">
                 3,000+ POOLZ
               </p>
-              <p className="font-semibold text-[14px] tracking-tight">27.67%</p>
+              <p className="font-semibold text-[13px] tracking-tight">27.67%</p>
             </div>
           </div>
         </div>
