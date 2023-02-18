@@ -72,7 +72,7 @@ export const Hero = () => {
           >
             <div className="bg-slate-900 text-white p-5 max-w-[301px] rounded-md">
               <h1 className="text-[28px] font-semibold opacity-95">Stake</h1>
-              <p className="text-gray-300 opacity-90 text-[15px] mt-3">
+              <p className="text-gray-300 opacity-90 mt-2 text-[14px]">
                 Stake POOLZ to participate in whitelists for upcoming IDOs.
               </p>
               <p className="text-gray-300 opacity-90 text-[14px] font-semibold mb-1 mt-4">
@@ -100,17 +100,17 @@ export const Hero = () => {
               </div>
               {/* card buttons */}
               <div className="my-4 flex justify-between items-center">
-                <button className="p-2 px-4 text-gray-300 opacity-90 rounded-md border border-slate-800">
+                <button className="p-2 text-sm px-4 text-gray-300 opacity-90 rounded-md border border-slate-800">
                   7 Days
                 </button>
-                <button className="p-2 px-4 text-gray-300 opacity-90 rounded-md border border-slate-800">
+                <button className="p-2 text-sm px-4 text-gray-300 opacity-90 rounded-md border border-slate-800">
                   30 Days
                 </button>
-                <button className="p-2 px-4 text-gray-300 opacity-90 rounded-md border border-slate-800">
+                <button className="p-2 text-sm px-4 text-gray-300 opacity-90 rounded-md border border-slate-800">
                   60 Days
                 </button>
               </div>
-              <button className="p-2 px-4 font-semibold rounded-md border border-slate-800 w-full mt-1 bg-pink-400">
+              <button className="p-2 px-4 font-semibold rounded-md border border-slate-800 w-full  bg-pink-400">
                 Stake & Lock
               </button>
             </div>
