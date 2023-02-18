@@ -1,13 +1,24 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const BonusCards = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="bg-gray-50 bg-opacity-70 overflow-x-hidden">
+    <div className="bg-gray-50 bg-opacity-80 overflow-x-hidden">
       <div className="px-2 md:px-4 flex">
         <div className="lg:flex-[.2]"></div>
-        <div className="lg:flex-[.6] flex-[1] py-14 flex flex-wrap md:flex-nowrap justify-center md:justify-start">
-          <div className="bg-white mb-5 w-full max-w-[350px] min-w-[300px] md:mr-5 rounded-md border border-gray-200 border-opacity-70 px-4">
+        <div className="lg:flex-[.6] overflow-hidden flex-[1] py-14 flex flex-wrap md:flex-nowrap justify-center md:justify-start">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            className="bg-white  mb-5 w-full max-w-[350px] min-w-[300px] md:mr-5 rounded-md border border-gray-200 border-opacity-70 px-4"
+          >
             <p className="font-semibold mt-4 text-gray-400 text-[14px]">
               Tiers
             </p>
@@ -30,7 +41,12 @@ export const BonusCards = () => {
               <CheckIcon className="w-5 h-5 rounded-full text-white p-[2px] bg-green-600" />
             </div>
           </div>
-          <div className="bg-white mb-5 w-full max-w-[350px] min-w-[300px] md:mr-5 rounded-md border border-gray-200 border-opacity-70 px-4">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            className="bg-white  mb-5 w-full max-w-[350px] min-w-[300px] md:mr-5 rounded-md border border-gray-200 border-opacity-70 px-4"
+          >
             <p className="font-semibold mt-4 text-gray-400 text-[14px]">
               Stake Bonus
             </p>

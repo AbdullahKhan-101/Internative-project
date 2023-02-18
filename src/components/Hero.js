@@ -1,15 +1,26 @@
 import { ChevronDownIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Hero = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <div className="px-2 md:px-4 flex">
         <div className="lg:flex-[.2]"></div>
         <div className="lg:flex-[.6] flex-[1] py-10 md:py-12 relative">
           {/* headings */}
-          <div className="flex flex-wrap items-center justify-between lg:max-w-[510px]">
+          <div
+            data-aos="fade-down"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            className="flex flex-wrap items-center justify-between lg:max-w-[510px] overflow-hidden"
+          >
             <h1 className="font-[600] text-[18px] mr-3 md:text-[22px]">
               Overview
             </h1>
@@ -24,7 +35,12 @@ export const Hero = () => {
             </h1>
           </div>
           {/* count */}
-          <div className="my-12 md:my-20 flex justify-center md:justify-start">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            className="my-12 md:my-20 flex justify-center md:justify-start overflow-hidden"
+          >
             <div className="flex">
               <GlobeAltIcon className="md:h-10 h-9 md:w-10 w-9 md:p-2 p-[7px] mr-2 sm:mr-4 bg-blue-600 rounded-full text-white" />
               <h1 className="lg:text-8xl md:text-7xl text-6xl -mt-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-400">
@@ -33,7 +49,12 @@ export const Hero = () => {
             </div>
           </div>
           {/* buttons */}
-          <div className="flex flex-wrap mb-10 md:justify-start justify-evenly max-w-[400px] mx-auto">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            className="flex flex-wrap mb-10 md:justify-start justify-evenly max-w-[400px] mx-auto md:mx-0"
+          >
             <button className="bg-black mr-3 py-[10px] px-[18px] outline-none border-none text-sm font-semibold text-white rounded-md">
               Buy on Uniswap
             </button>
@@ -43,7 +64,12 @@ export const Hero = () => {
             </button>
           </div>
           {/* card */}
-          <div className="card_container flex justify-center">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+            className="card_container flex justify-center overflow-hidden"
+          >
             <div className="bg-black text-white p-5 max-w-[310px] bg-opacity-95 rounded-md">
               <h1 className="text-[28px] font-semibold opacity-95">Stake</h1>
               <p className="text-gray-300 opacity-90 text-[15px] mt-3">
@@ -93,7 +119,12 @@ export const Hero = () => {
         </div>
         <div className="lg:flex-[.2] md:min-w-[360px]"></div>
       </div>
-      <hr className="border-b-gray-200 border-b border-opacity-60" />
+      <hr
+        // data-aos="fade-left"
+        // data-aos-delay="600"
+        // data-aos-duration="1000"
+        className="border-b-gray-200 border-b border-opacity-60"
+      />
     </>
   );
 };

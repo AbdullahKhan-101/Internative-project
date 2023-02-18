@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   ChevronDownIcon,
   CodeBracketIcon,
   GlobeAltIcon,
   Squares2X2Icon,
 } from "@heroicons/react/24/solid";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Header = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="px-1 md:px-4  border-b-gray-200 border-b flex items-center border-opacity-80">
+    <div
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-duration="1200"
+      className="px-1 sticky top-0 z-10 bg-white md:px-4 overflow-x-hidden border-b-gray-200 border-b flex items-center border-opacity-80"
+    >
       <div className="flex flex-[.2] items-center">
         <Squares2X2Icon className="h-8 w-8 cursor-pointer p-[7px] sm:mr-3 mr-1 border-gray-200 border-opacity-80 border rounded-[4px]" />
         <div className="flex items-center cursor-pointer">
